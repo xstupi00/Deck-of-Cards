@@ -77,7 +77,7 @@ class Card:
             Returns a string representation of this card, including both its suit and its value.
             (e.g. "Queen of Hearts", "10 of Diamonds").
         """
-        return self.value_as_string() + " of " + self.suit_as_string()
+        return f"{self.value_as_string()} of {self.suit_as_string()}"
 
 
 class Deck:
