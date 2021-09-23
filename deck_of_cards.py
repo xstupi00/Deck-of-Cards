@@ -25,6 +25,7 @@ class EmptyDeck(Exception):
 
 class Card:
     """Card class."""
+
     def __init__(self, suit, value):
         self._suit = suit
         self._value = value
@@ -81,6 +82,7 @@ class Card:
 
 class Deck:
     """Deck class."""
+
     def __init__(self):
         self.cards = [Card(suit, value) for suit in suits for value in range(1, suit_cards + 1)]
 
@@ -107,6 +109,7 @@ class Deck:
 
 class Hand:
     """Hand class."""
+
     def __init__(self):
         # A set of cards, which have been dealt from a Deck.
         self.hand = []
